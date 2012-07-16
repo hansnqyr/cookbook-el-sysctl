@@ -27,6 +27,9 @@ net.ipv4.tcp_syncookies = <%= node["net"]["ipv4"]["tcp_syncookies"] %>
 # Controls the maximum size of a message, in bytes
 kernel.msgmnb = <%= node["kernel"]["msgmnb"] %>
 
+# Controls the maximum number of message queues
+kernel.msgmni = <%= node["kernel"]["msgmni"] %>
+
 # Controls the default maxmimum size of a mesage queue
 kernel.msgmax = <%= node["kernel"]["msgmax"] %>
 
